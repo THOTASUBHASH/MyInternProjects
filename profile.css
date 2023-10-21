@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Victor+Mono:wght@300&family=Work+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main, #contact {
+    background-color: aliceblue;
+    width: 900px;
+    height: 500px;
+    margin: 120px 0 150px 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 greenyellow, 0 6px 20px 0 greenyellow;
+}
+
+h4 {
+    font-size: large;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 40px 0 0 50px;
+}
+
+.content h4, .details h4 {
+    padding-left: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.list-items ul {
+    display: flex;
+    list-style: none;
+} 
+
+.list-items ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin: 40px 5px 0 0;
+    transition: width 0.2s ease;
+}
+
+.list-items ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.list-items ul li a.active {
+    border-bottom: 2px solid black;
+    text-shadow: 2px 2px 2px black;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+    0% {text-shadow: 2px 2px 2px black;}
+    50% {text-shadow: 4px 4px 4px black;}
+    100% {text-shadow: 2px 2px 2px black;}
+}
+
+.about {
+    display: flex;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    margin-left: 250px;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+.content {
+    width: 300px;
+}
+
+.content h2 {
+    padding-top: 80px;
+    padding-left: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+.sub-content {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.sub-content h4 {
+    padding-left: 30px;
+}
+
+#about {
+    background-color: aliceblue;
+    width: 900px;
+    height: 500px;
+    margin: 150px 0 150px 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 greenyellow, 0 6px 20px 0 greenyellow;
+}
+
+#about p, h3, #contact p {
+    font-size: large;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 40px 0 0 50px;
+}
+
+#about ul, #contact ul {
+    display: flex;
+    list-style: none;
+}
+
+#about ul li a, #contact ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin: 40px 5px 0 0;
+    transition: width 0.2s ease;
+}
+#about ul li a:hover, #contact ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+#about p.active, #contact p.active {
+    text-shadow: 2px 2px 2px black;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+    0% {text-shadow: 2px 2px 2px black;}
+    50% {text-shadow: 4px 4px 4px black;}
+    100% {text-shadow: 2px 2px 2px black;}
+}
+
+table {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.hobbies {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.hobbies h2, .skills h2 {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hobbies ol, .skills ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.skills {
+    margin-left: 400px;
+    margin-top: -80px;
+}
+
+.material-symbols-outlined {
+    margin: 50px 0 0 100px;
+    color: black;
+}
+
+.cnt {
+    display: flex;
+}
